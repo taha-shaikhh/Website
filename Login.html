@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>Login Form</title>
+<link rel="stylesheet" href="login_css.css">
+<script language="javascript">
+function ValidUserNamePassword(){
+var Password;
+
+Password=f1.password.value;
+
+if(Password.length < 6){
+alert("Password Length should be between 6-12")
+f1.password.value=""
+f1.password.focus()
+return false
+}
+
+else if(!Password.match(/^[0-9a-zA-Z@]+$/)){
+alert("Password must only include uppercase, lowercase and a special character")
+f1.password.value=""
+f1.password.focus()
+return false
+}
+
+else{
+alert("Correct UserName and Password")
+}
+}
+</script>
+
+</head>
+<body>
+<h1>Welcome To The Website!!!</h1>
+<div>
+
+<form name="f1">
+
+<h2>Login Screen</h2>
+   Email
+<input type="email" name="email" placeholder="Enter Your Email" maxlength="30">
+<br>
+   Password 
+<input type="password" name="password" placeholder="Enter Your Password" maxlength="12">
+<input type="checkbox" checked="checked" name="remember"> Remember me&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="#" style="color:white" class="btn">Forgot password?</a>
+<button type="submit" name="login" onclick="ValidUserNamePassword()">Login</button>
+
+<br><br>
+<a href="#" class="sign" onclick="window.location.href='signup.html'">New User? Sign up</a>
+
+<!--<td><input type="button" name="b1" value="Submit" onclick="ValidUserNamePassword()"></td>-->
+</form>
+</div>
+
+
+</body>
+</html>
