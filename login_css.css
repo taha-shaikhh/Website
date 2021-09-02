@@ -4,7 +4,7 @@
 
 body{
     color: lavender;
-    background-color: rgb(154, 164, 209);
+    background-color: tomato;
 }
 
 h1{
@@ -25,7 +25,7 @@ div{
     margin-bottom: auto;
     margin-right: auto;
     /* background-color: rgba(147, 156, 196, 0.685); */
-    background-color: rgba(0, 0, 0, 0.479);
+    background-color: #ffa090;
     border-radius: 10px ;
     
 }
@@ -40,7 +40,7 @@ div.sarea{
     margin-left:auto;
     margin-bottom: auto;
     margin-right: auto;
-    background-color: rgba(0, 0, 0, 0.479);
+    background-color: tomato;
     border-radius: 10px ;
 }
 
