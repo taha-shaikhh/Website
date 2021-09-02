@@ -22,10 +22,8 @@ f1.password.focus()
 return false
 }
 
-else{
-alert("Correct UserName and Password")
 }
-}
+
 </script>
 
 </head>
@@ -33,22 +31,20 @@ alert("Correct UserName and Password")
 <h1>Welcome To The Website!!!</h1>
 <div>
 
-<form name="f1">
+<form name="f1" action="login.php" method="POST">
 
 <h2>Login Screen</h2>
    Email
-<input type="email" name="email" placeholder="Enter Your Email" maxlength="30">
+<input type="email" name="email" id="email" placeholder="Enter Your Email" maxlength="30">
 <br>
    Password 
-<input type="password" name="password" placeholder="Enter Your Password" maxlength="12">
+<input type="password" name="password" id="password" placeholder="Enter Your Password" maxlength="12">
 <input type="checkbox" checked="checked" name="remember"> Remember me&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="#" style="color:white" class="btn">Forgot password?</a>
 <button type="submit" name="login" onclick="ValidUserNamePassword()">Login</button>
 
 <br><br>
-<a href="#" class="sign" onclick="window.location.href='signup.html'">New User? Sign up</a>
-
-<!--<td><input type="button" name="b1" value="Submit" onclick="ValidUserNamePassword()"></td>-->
+<a href="signup.html" class="sign" >New User? Sign up</a>
 </form>
 </div>
 
